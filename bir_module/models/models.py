@@ -550,7 +550,7 @@ class bir_reports(models.Model):
         return str(val)
 
     def x_slice_vat(self, vat):
-        val = [000, 000, 000, 000]
+        val = ['000', '000', '000', '000']
         if vat != False:
             val = [vat[:3], vat[3:6], vat[6:], '000']
 
